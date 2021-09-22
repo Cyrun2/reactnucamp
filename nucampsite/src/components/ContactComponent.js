@@ -58,7 +58,6 @@ class Contact extends Component {
     }
 
     render() {
-        const errors = this.validate(this.state.firstName, this.state.lastName, this.state.phoneNum, this.state.email);
         return (
             <div className="container">
                 <div className="row">
@@ -211,15 +210,6 @@ class Contact extends Component {
                                         <option>By Phone</option>
                                         <option>By Email</option>
                                     </Control.select>
-                                </Col>
-                            </Row>
-                            <Row className="form-group">
-                                <Label htmlFor="feedback" md={2}>Your Feedback</Label>
-                                <Col md={10}>
-                                    <Control.textarea model=".feedback" id="feedback" name="feedback"
-                                        rows="12"
-                                        className="form-control"
-                                        />
                                 </Col>
                             </Row>
                             <Row className="form-group">
