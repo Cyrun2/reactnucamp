@@ -10,7 +10,7 @@ errMess: null, promotions: [] }, action) => {
 
         case ActionTypes.PROMOTIONS_LOADING:
             return {...state, isLoading: true, errMess: null,
-                promtions: actions.payload};
+                promtions: []};
         
         case ActionTypes.PROMOTIONS_FAILED:
             return {...state, isLoading:false, errMess: action.payload};
